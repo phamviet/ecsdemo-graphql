@@ -1,5 +1,10 @@
 namespace: vi
 service:
-  port: 8080
+  port: 80
   pathPatterns:
-  - /*
+    - /graphql
+  pipeline:
+    acceptance:
+      environment: dev
+    production:
+      environment: prod
