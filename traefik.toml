@@ -1,0 +1,18 @@
+
+[file]
+
+[backends]
+
+  [backends.graphcms]
+    [backends.graphcms.servers]
+      [backends.graphcms.servers.server0]
+        url = "https://api-apeast.graphcms.com"
+        
+[frontends]
+
+  [frontends.graphql]
+    backend = "graphcms"
+    passHostHeader = false
+    [frontends.graphql.routes]
+      [frontends.graphql.routes.route0]
+        rule = "Path:/graphql; ReplacePath:/v1/cjte5yiol922j01ej7jts5jmd/master"
