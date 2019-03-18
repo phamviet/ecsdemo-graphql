@@ -1,0 +1,5 @@
+namespace: vi
+service:
+  port: 8080
+  pathPatterns:
+  - /*
