@@ -1,6 +1,7 @@
 service:
   name: graphql
-  healthEndpoint: /
+  desiredCount: 3
+  maxSize: 6
   port: 80
   pathPatterns:
     - /graphql
