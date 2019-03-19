@@ -1,9 +1,10 @@
 service:
-  # name: graphql
+  name: graphql
   healthEndpoint: /
   port: 80
   pathPatterns:
     - /graphql
+  priority: 10
   pipeline:
     acceptance:
       environment: dev
