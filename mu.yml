@@ -1,5 +1,6 @@
-namespace: vi
 service:
+  # name: graphql
+  healthEndpoint: /
   port: 80
   pathPatterns:
     - /graphql
